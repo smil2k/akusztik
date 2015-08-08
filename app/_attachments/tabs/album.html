@@ -1,0 +1,7 @@
+<h1>Albumok</h1>
+
+<ul>
+  <li ng-repeat="row in albumList.rows track by row.id">
+    <a href="#/play/{{row.id}}/list">{{row.value}}</a>
+  </li>
+</ul>
