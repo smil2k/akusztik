@@ -37,7 +37,7 @@
 </div>
 
 <ul>
-  <li ng-repeat="row in trackList.rows track by row.id">
-    <a href="#/play/{{row.id}}/list">{{row.value}}</a>
+  <li ng-repeat="row in trackObject.Cue track by row.Position">
+    <a href="#/play/{{trackObject._id}}/{{row.Position}}">{{row.Name}}</a>
   </li>
 </ul>

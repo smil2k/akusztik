@@ -11,9 +11,9 @@ services.factory("albumList", ['$resource',
     });
   }]);
 
-services.factory("track", ['$resource',
+services.factory("trackList", ['$resource',
   function($resource) {
-    return $resource('../../?:doc', {}, {
+    return $resource('../../:doc', {}, {
       get: {method: "GET", params: {doc: '0'}, isArray: false}
     });
   }]);
